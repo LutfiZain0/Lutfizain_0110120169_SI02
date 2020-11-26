@@ -1,0 +1,55 @@
+<html>   
+   <head>
+      <title>Form Validation</title>      
+      <script type = "text/javascript">
+        
+      </script> 
+      <style>
+        body {
+          background-color:rgb(200, 202, 61);
+        }
+        </style>     
+   </head>
+        
+        
+   <body>
+      <form action = "/cgi-bin/test.cgi" name = "myForm"  onsubmit=" return validateForm()">
+        <center>
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">Nama</td>
+               <td><input type = "text" name = "Nama" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">EMail</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Waktu berangkat</td>
+               <td><input type = "text" name = "waktu berangkat" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">tujuan keberangkatan</td>
+               <td>
+                  <select name = "tujuan keberangkatan>
+                     <option value = "-1" selected>Country</option>
+                     <option value = "1">Singapore</option>
+                     <option value = "2">Indonesia</option>
+                     <option value = "3">INDIA</option>
+                  </select>
+               </td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+        </center>    
+         </table>
+      </form>      
+   </body>
+</html>
